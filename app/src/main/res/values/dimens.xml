@@ -10,4 +10,7 @@
 
     <!-- text size -->
     <dimen name="left_menu_text_size">20sp</dimen>
+    <dimen name="card_word_text_size">28sp</dimen>
+    <dimen name="card_pronunciation_text_size">16sp</dimen>
+    <dimen name="card_definition_text_size">18sp</dimen>
 </resources>

@@ -32,6 +32,13 @@ public class ListAdapter<T extends ListItem> extends BaseAdapter {
         notifyDataSetChanged();
     }
 
+    public void removeItem(int pos) {
+        if (list.size() > pos) {
+            list.remove(pos);
+            notifyDataSetChanged();
+        }
+    }
+
     public void appendList(List<T> list) {
         this.list.addAll(list);
         notifyDataSetChanged();
@@ -62,7 +69,8 @@ public class ListAdapter<T extends ListItem> extends BaseAdapter {
             binding = DataBindingUtil.getBinding(view);
         }
         binding.setVariable(item.getDataVariableId(), item);
-        binding.setVariable(item.getListenerVariableId(), this.listener);
+        if (item.getListenerVariableId() > 0)
+            binding.setVariable(item.getListenerVariableId(), this.listener);
         binding.getRoot().setTag(item);
         return binding.getRoot();
     }

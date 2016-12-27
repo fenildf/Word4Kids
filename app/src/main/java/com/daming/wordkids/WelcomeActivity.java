@@ -29,6 +29,7 @@ public class WelcomeActivity extends Activity {
             switch (msg.what) {
                 case HANDLER_MSG_OVER:
                     startActivity(new Intent(WelcomeActivity.this, MainActivity.class));
+                    finish();
                     break;
             }
             super.handleMessage(msg);

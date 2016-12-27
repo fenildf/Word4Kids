@@ -1,5 +1,7 @@
-一款专门为儿童设计的学单词应用，通过单词卡来学习单词。
+Word4Kids
 ======
+一款专门为儿童设计的学单词应用，通过单词卡来学习单词。
+
 
 
 APP used
@@ -10,14 +12,14 @@ APP used
 1. [Picasso](https://github.com/square/picasso)   A powerful image downloading and caching library for Android
 1. [RxAndroid](https://github.com/ReactiveX/RxAndroid)   RxJava bindings for Android
 1. [RxJava](https://github.com/ReactiveX/RxJava)  Reactive Extensions for the JVM 
-1. [Swipecards](https://github.com/Diolor/Swipecards)  A Tinder-like Android library to create the swipe cards effect. You can swipe left or right to like or dislike the content.
+1. [android-card-slide-panel](https://github.com/xmuSistone/android-card-slide-panel)  enable users to slide card to the left or right smoothly and continuously
 
 
 License
 ======
 
 ```
-   Copyright 2014 Dionysis Lorentzos
+   Copyright 2014 yangdm0209
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

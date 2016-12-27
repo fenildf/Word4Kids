@@ -6,8 +6,13 @@
     <data>
 
         <variable
-            name="menu_adapter"
+            name="menuAdapter"
             type="android.widget.BaseAdapter" />
+
+        <variable
+            name="head_selogan"
+            type="String" />
+
     </data>
 
     <android.support.v4.widget.DrawerLayout
@@ -17,11 +22,34 @@
         android:fitsSystemWindows="true"
         tools:openDrawer="start">
 
-        <include
-            layout="@layout/app_bar_main"
-            android:id="@+id/main_content"
+        <android.support.design.widget.CoordinatorLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            tools:context="com.daming.wordkids.MainActivity">
+
+            <android.support.design.widget.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/AppTheme.AppBarOverlay">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+            </android.support.design.widget.AppBarLayout>
+
+            <FrameLayout
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp">
+            </FrameLayout>
+
+        </android.support.design.widget.CoordinatorLayout>
 
         <LinearLayout
             android:id="@+id/drawer_left"
@@ -40,7 +68,7 @@
                 android:id="@+id/left_menu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                app:adapter="@{menu_adapter}" />
+                app:adapter="@{menuAdapter}" />
         </LinearLayout>
 
     </android.support.v4.widget.DrawerLayout>

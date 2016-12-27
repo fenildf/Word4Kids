@@ -7,5 +7,7 @@ package com.daming.wordkids.adapter;
 public abstract class ListItem {
     public abstract int getDataVariableId();
     public abstract int getListenerVariableId();
-    public abstract int getLayoutId();
+    public int getLayoutId(){
+        return android.R.layout.simple_list_item_1;
+    }
 }
