@@ -3,7 +3,6 @@ package com.daming.wordkids.cardslideview;
 import android.annotation.SuppressLint;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -15,7 +14,6 @@ import com.daming.wordkids.R;
 import com.daming.wordkids.bean.Card;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -98,10 +96,6 @@ public class CardFragment extends Fragment {
                 playAudio(item.audio);
             }
 
-            @Override
-            public void onNoData() {
-                Log.d(TAG, "onNoData: 没有数据啦。。");
-            }
         };
         slidePanel.setCardSwitchListener(cardSwitchListener);
     }

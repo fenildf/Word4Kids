@@ -239,9 +239,6 @@ public class CardSlidePanel extends ViewGroup {
             changedView.fillData(dataItem);
         } else {
             changedView.setVisibility(View.INVISIBLE);
-            if (null != cardSwitchListener){
-                cardSwitchListener.onNoData();
-            }
         }
 
         // 4. viewList中的卡片view的位次调整
@@ -546,7 +543,5 @@ public class CardSlidePanel extends ViewGroup {
          * 卡片点击事件
          */
         public void onItemClick(Card item);
-
-        public void onNoData();
     }
 }
