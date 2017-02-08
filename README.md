@@ -1,6 +1,6 @@
 Word4Kids
 ======
-Ò»¿î×¨ÃÅÎª¶ùÍ¯Éè¼ÆµÄÑ§µ¥´ÊÓ¦ÓÃ£¬Í¨¹ıµ¥´Ê¿¨À´Ñ§Ï°µ¥´Ê¡£
+ä¸€æ¬¾ä¸“é—¨ä¸ºå„¿ç«¥è®¾è®¡çš„å­¦å•è¯åº”ç”¨ï¼Œé€šè¿‡å•è¯å¡æ¥å­¦ä¹ å•è¯ã€‚
 
 
 
@@ -8,7 +8,7 @@ APP used
 ======
 1. AppCompat
 1. Data Binding (only MVVM)
-1. [Retrofit 2](https://github.com/square/retrofit)  app/src/main/java/com/daming/wordkids/MainActivity.java
+1. [Retrofit 2](https://github.com/square/retrofit)  Type-safe HTTP client for Android and Java by Square, Inc.
 1. [Picasso](https://github.com/square/picasso)   A powerful image downloading and caching library for Android
 1. [RxAndroid](https://github.com/ReactiveX/RxAndroid)   RxJava bindings for Android
 1. [RxJava](https://github.com/ReactiveX/RxJava)  Reactive Extensions for the JVM 
